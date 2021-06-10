@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Fragment.AlarmFragment">
+    
+    <LinearLayout
+        android:id="@+id/linear_Chormate"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <TextView
+        android:text="00:00:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTimer"
+        android:textSize="90dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+         />
+
+    </LinearLayout>
+   <RelativeLayout
+       android:padding="20dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/linear_Chormate">
+       >
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_alignParentLeft="true"
+               xmlns:app="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/img_lap"
+               android:layout_width="96dp"
+               android:visibility="gone"
+               android:layout_height="96dp"
+               android:src="@drawable/ic_baseline_add_24"
+               app:civ_border_width="2dp"
+               app:civ_border_color="#E9F1A3"/>
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_alignParentLeft="true"
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/img_Reset"
+           android:layout_width="96dp"
+           android:layout_height="96dp"
+           android:src="@drawable/ic_baseline_refresh_24"
+           app:civ_border_width="2dp"
+           app:civ_border_color="#E9F1A3"/>
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_alignParentRight="true"
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/img_start"
+           android:layout_width="96dp"
+           android:layout_height="96dp"
+           android:src="@drawable/ic_baseline_not_started_24"
+           app:civ_border_width="2dp"
+           app:civ_border_color="#E9F1A3"/>
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_alignParentRight="true"
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/img_Stop"
+           android:visibility="gone"
+           android:layout_width="96dp"
+           android:layout_height="96dp"
+           android:src="@drawable/ic_baseline_pause_24"
+           app:civ_border_width="2dp"
+           app:civ_border_color="#E9F1A3"/>
+   </RelativeLayout>
+
+
+
+</RelativeLayout>

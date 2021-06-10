@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Fragment.AlarmFragment"
+    android:padding="10dp">
+
+    <!-- TODO: Update blank fragment layout -->
+   <RelativeLayout
+       android:padding="11dp"
+       android:layout_alignParentTop="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/real_edit">
+       <TextView
+           android:id="@+id/txt_alarm_edit"
+           android:layout_alignParentLeft="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Edit"
+           android:textSize="20dp"
+           android:textColor="@color/color_itemnavigation"/>
+       <TextView
+           android:fontFamily="sans-serif-condensed-medium"
+           android:layout_marginTop="10dp"
+           android:layout_alignParentLeft="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/txt_alarm_edit"
+           android:text="Alarm"
+           android:textSize="30dp"
+           android:textColor="#FFFBFB"/>
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/ic_baseline_add_24"
+           android:layout_alignParentRight="true"/>
+
+   </RelativeLayout>
+    <View
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B3B2B2"
+        android:layout_below="@+id/real_edit"/>
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
