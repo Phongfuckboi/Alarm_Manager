@@ -6,5 +6,32 @@
     android:background="@color/black"
     tools:context=".Fragment.AlarmFragment">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:gravity="center"
+        >
+        <io.github.deweyreed.scrollhmspicker.ScrollHmsPicker
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/scrollHmsPicker"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:ignore="MissingClass" />
+        <picker.ugurtekbas.com.Picker.Picker
+
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/amPicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:hourFormat="false"
+            app:canvasColor="@color/white"
+            app:textColor="#E1E116"
+            app:trackSize="4dp"
+            app:dialRadius="60dp" />
+
+    </RelativeLayout>
+
 
 </RelativeLayout>
